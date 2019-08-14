@@ -1,0 +1,21 @@
+#Fill in list with whatever you want
+
+list = []
+
+#Function creates a blank list that will contain the final product
+#Next it calls for each charachter from index 0 until the end of the list
+#It then calls for each character in the list to be compared to the final product list
+#If the character is not in the final list it gets added
+#The Final list gets printed
+
+def remove_dup(x):
+    final_prod=[]
+    for char in range(0,len(x)):
+        for num in x:
+            while num not in final_prod:
+                final_prod.append(num)
+    print(final_prod)
+
+#Calling for the original list inside of the created function
+
+remove_dup(list)
